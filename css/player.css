@@ -1,0 +1,12 @@
+#vimeoPlayer {
+    width: 640px;
+    height: 360px;
+    background-color: #000;
+}
+.controls {
+    margin-top: 10px;
+}
+.controls button {
+    margin-right: 1px;
+    padding: 0.5rem;
+}

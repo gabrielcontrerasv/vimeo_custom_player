@@ -25,12 +25,15 @@ function initializeVimeoPlayer(idVideo) {
   player.on("timeupdate", function (event) {
     player.getDuration().then((duration) => {
       player.getCurrentTime().then((currentTime) => {
-        const expectedPercentage = Math.round(duration * 0.75); 
+        const expectedPercentage = Math.round(duration * 0.25); 
         const userTime = Math.round(currentTime); 
+        document.getElementById("Progress").value = userTime;
   
         if (userTime === expectedPercentage) {
           console.log(player);
           player.pause();
+         
+          
         }
       });
     });

@@ -1,4 +1,3 @@
-
 function loadPlayer(url){
   const regex = /(?:webex|vimeo).*\/(\d+)\/?$/;
   const matchResult = url.match(regex);
@@ -43,4 +42,5 @@ function  webexePlayer(idVideo) {
   document.getElementById("Player").style.display = "none";
 }
 
-loadPlayer("https://webex.com/847730519")
+//loadPlayer("https://webex.com/847730519")
+loadPlayer("https://vimeo.com/manage/videos/847730519");
